@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    /*Colours*/
+    --clear-bg: white;
+    --clear-text: white;
+    --shadows: rgba(43, 61, 73, 0.2);
+        /*Category colours*/
+        --no-metals-and-others-cl: #00A3FF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #46606B;
+    min-height: 100vh;
+}
+
+.web-container{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-header__nav{
+    display: flex;
+    list-style: none;
+}
+
+.main-header__nav-item{
+    margin-left: 40px;
+    font-size: 18px;
+    color: var(--clear-text);
+    height: fit-content;
+}
+
+.main-header__nav-item.selected{
+    border-bottom: 2px solid var(--clear-bg);
+}
+
+.main-header__nav-item a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.element-tile{
+    width: 60px;
+    height: 60px;
+    background-color: var(--clear-bg);
+    box-shadow: 0px 2px 2px var(--shadows);
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.element-tile__group-indicator{
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.element-tile__symbol{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.element-tile__elemnt-name{
+    font-weight: 300;
+    font-size: 8px;
+}
+
+.element-tile__atomic-number{
+    font-weight: 700;
+    font-size: 9px;
+}
+
+.no-metals-and-others{
+    background-color: var(--no-metals-and-others-cl);
+}
